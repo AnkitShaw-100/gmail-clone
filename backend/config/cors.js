@@ -1,7 +1,7 @@
-// Enable CORS for frontend-backend connection
-import cors from "cors";
-
-export default cors({
-  origin: "http://localhost:5173", // Vite default port
-  credentials: true,
-});
+const corsOptions = {
+  origin: [
+    "https://gmail-clone-yy27.vercel.app", // Add your frontend URL here
+    "http://localhost:3000" // (optional for local dev)
+  ],
+  credentials: true
+};
